@@ -1,0 +1,69 @@
+.consultations-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.consultations-modal-content {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 600px;
+  width: 90%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+.consultations-modal-content h3 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.consultations-modal-content p {
+  margin: 10px 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.consultation-content {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin-top: 15px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.consultation-content strong {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.consultations-close-button {
+  position: absolute;
+  top: 10px; /* 모달 내부 상단에서 10px 떨어짐 */
+  right: 10px; /* 모달 내부 우측에서 10px 떨어짐 */
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem; /* 버튼 크기 조정 */
+  color: #666;
+}
+
+.consultations-close-button:hover {
+  background: none; /* hover 효과 제거 */
+  color: #000; /* 기본 텍스트 색상 유지 */
+}
